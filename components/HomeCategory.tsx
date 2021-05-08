@@ -19,6 +19,7 @@ const HomeCategory = (props: HomeCategoryProps) => {
       <FlatList
         data={category.movies}
         horizontal
+        showsHorizontalScrollIndicator={false}
         renderItem={({ item }) => (
           <Image style={styles.image} source={{ uri: item.poster }} />
         )}
